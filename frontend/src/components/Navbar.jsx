@@ -50,7 +50,7 @@ const Navbar = () => {
             )}
             {isAdmin && (
               <Link
-                className="bg-black hover:bg-gray-700 text-white px-3 py-1 rounded-md font-medium
+                className="bg-[#232323] hover:bg-gray-700 text-white px-3 py-1 rounded-md font-medium
 								 transition duration-300 ease-in-out flex items-center"
                 to={"/secret-dashboard"}
               >
@@ -72,7 +72,7 @@ const Navbar = () => {
               <>
                 <Link
                   to={"/signup"}
-                  className="bg-black hover:bg-gray-700 text-white py-2 px-4 
+                  className="bg-[#232323] hover:bg-gray-700 text-white py-2 px-4 
 									rounded-md flex items-center transition duration-300 ease-in-out"
                 >
                   <UserPlus className="mr-2" size={18} />
