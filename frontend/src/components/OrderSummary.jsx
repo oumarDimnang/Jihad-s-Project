@@ -41,7 +41,7 @@ const OrderSummary = () => {
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5 }}
     >
-      <p className="text-xl font-semibold text-emerald-600">Order summary</p>
+      <p className="text-xl font-semibold text-gray-900">Order summary</p>
 
       <div className="space-y-4">
         <div className="space-y-2">
@@ -75,14 +75,14 @@ const OrderSummary = () => {
           )}
           <dl className="flex items-center justify-between gap-4 border-t border-gray-200 pt-2">
             <dt className="text-base font-bold text-gray-900">Total</dt>
-            <dd className="text-base font-bold text-emerald-600">
+            <dd className="text-base font-bold text-black">
               ${formattedTotal}
             </dd>
           </dl>
         </div>
 
         <motion.button
-          className="flex w-full items-center justify-center rounded-lg bg-emerald-600 px-5 py-2.5 text-sm font-medium text-white hover:bg-emerald-700 focus:outline-none focus:ring-4 focus:ring-emerald-300"
+          className="flex w-full items-center justify-center rounded-lg bg-gray-700 px-5 py-2.5 text-sm font-medium text-white hover:bg-gray-600 focus:outline-none focus:ring-2 focus:ring-gray-500"
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}
           onClick={handlePayment}

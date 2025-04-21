@@ -33,14 +33,14 @@ const ProductCard = ({ product }) => {
         </h5>
         <div className="mt-2 mb-5 flex items-center justify-between">
           <p>
-            <span className="text-3xl font-bold text-emerald-600">
+            <span className="text-3xl font-bold text-gray-900">
               ${product.price}
             </span>
           </p>
         </div>
         <button
-          className="flex items-center justify-center rounded-lg bg-emerald-600 px-5 py-2.5 text-center text-sm font-medium
-					 text-white hover:bg-emerald-700 focus:outline-none focus:ring-4 focus:ring-emerald-300"
+          className="flex items-center justify-center rounded-lg bg-gray-600 px-5 py-2.5 text-center text-sm font-medium
+					 text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-gray-300"
           onClick={handleAddToCart}
         >
           <ShoppingCart size={22} className="mr-2" />
