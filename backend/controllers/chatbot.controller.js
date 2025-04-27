@@ -1,6 +1,6 @@
-const { generateDescriptionWithOpenAI } = require("../utils/openAIConfig.js");
+import { generateDescriptionWithOpenAI } from "../utils/openAIConfig.js";
 
-exports.sendMessage = async (req, res) => {
+export const sendMessage = async (req, res) => {
   try {
     const { userText } = req.body;
 

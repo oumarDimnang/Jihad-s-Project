@@ -1,4 +1,4 @@
-const axios = require("axios");
+import axios from "axios";
 
 const systemContent = `
 You are a helpful assistant that answers questions based on the following hospital data:
@@ -34,7 +34,7 @@ You are a helpful assistant that answers questions based on the following hospit
 Answer user queries only based on this data. Be accurate and specific. If a hospital or specialty is not listed, let the user know it's not available. Also answer medical questions from the user like "I have a headache, how to treat it?" and also similar questions to these. Also remember, you are a medical information AI assistant.
 `;
 
-exports.generateDescriptionWithOpenAI = async (userText) => {
+export const generateDescriptionWithOpenAI = async (userText) => {
   try {
     const response = await axios.post(
       "https://api.openai.com/v1/chat/completions",
