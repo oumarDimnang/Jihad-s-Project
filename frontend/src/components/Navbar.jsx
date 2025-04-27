@@ -27,6 +27,13 @@ const Navbar = () => {
             >
               Home
             </Link>
+            <Link
+              to={"/ai-assistant-chat"}
+              className="text-white transition duration-300
+					 ease-in-out bg-violet-600 hover:bg-violet-800 px-3 py-2 rounded-2xl"
+            >
+              AI Assistant
+            </Link>
             {user && (
               <Link
                 to={"/cart"}
@@ -55,7 +62,7 @@ const Navbar = () => {
                 to={"/secret-dashboard"}
               >
                 <Lock className="inline-block mr-1" size={18} />
-                <span className="hidden sm:inline">Dashboard</span>
+                <span className="hidden sm:inline">Vender Dashboard</span>
               </Link>
             )}
 
